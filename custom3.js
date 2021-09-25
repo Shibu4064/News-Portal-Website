@@ -1,0 +1,31 @@
+$(document).ready(function(){
+    $('#more_menu').on('click',function() {
+        $('#mega_menu').slideToggle(500)
+        $('#menu').slideToggle(500)
+    })
+})
+$(document).ready(function(){
+    $('#search_toggle').on('click',function(){
+        $('#menu_container').slideToggle()
+        $('#search_box').slideToggle()
+    })
+    $('#search_close').on('click',function(){
+        $('#menu_container').slideToggle()
+        $('#search_box').slideToggle()
+    })
+    $('.photo-gallery').slick({
+        arrows: true
+    })
+    $('#must_read_button').on('click',function(){
+        $(this).addClass('active')
+        $('#latest_news_button').removeClass('active')
+        $('#must_read').show()
+        $('#latest_news').hide()
+    })
+    $('#latest_news_button').on('click',function(){
+        $(this).addClass('active')
+        $('#must_read_button').removeClass('active')
+        $('#latest_news').show()
+        $('#must_read').hide()
+    })
+})

@@ -1,0 +1,460 @@
+@font-face {
+    font-family: SolaimanLipi;
+    src: url(../fonts/SolaimanLipi_20-04-07.ttf);
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: SolaimanLipi, sans-serif;
+}
+h1{
+    font-family: SolaimanLipi, sans-serif;
+}
+.top-bar-container{
+    background: black;
+    font-size: 14px;
+    padding: 5px;
+}
+.top-bar-links ul li,
+.top-bar-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.top-bar-links ul li{
+    list-style: none;
+    display: inline-flex;
+}
+.top-bar-links ul li::after{
+    content: " | ";
+    padding: 0 5px;
+}
+.top-bar-links ul li:last-of-type::after{
+    display: none;
+}
+.topbar-social-icons a{
+  color: white;
+  padding: 0 2px;
+  font-size: 16px;
+}
+.logo{
+    padding: 10px;
+    max-width: 100%;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: red;
+}
+.right-menu-items{
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 30px;
+}
+.more_menu{
+  cursor: pointer;
+}
+.search{
+  cursor: pointer;
+}
+#search_close{
+    cursor: pointer;
+}
+.mega_menu{
+    background: white;
+    box-shadow: 0 0 5px silver;
+    padding: 10px 5px;
+    position: absolute;
+    width: 100%;
+    top: 83px;
+    left: 13px;
+}
+.mega_menu a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 3px 0;
+}
+.mega_menu a:hover{
+    color: red;
+}
+.mega_menu_bottom{
+    border-top: 1px solid silver;
+    padding: 15px 0;
+}
+.menu-container{
+    border-bottom: 1px solid silver;
+}
+.news-container a,
+.news-single-item a,
+.section-area-items a{
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.news-container a h4,
+.news-single-item a h5{
+    margin: 10px 0;
+}
+.news-container a h4{
+    font-size: 35px;
+    font-weight: 500;
+}
+.news-single-item a h5{
+    font-size: 18px;
+    text-align: justify;
+}
+.news-single-item a h5:hover{
+   color: blue;
+}
+.section-area-items a h5:hover{
+    color: blue;
+}
+.section-area-items h5{
+    font-size: 16px;
+    text-align: justify;
+    padding-top: 15px;
+}
+.section-area h4{
+    padding-bottom: 5px;
+    border-bottom: 1px solid red;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.slick-next{
+    right: 0;
+}
+.slick-prev{
+    left: 0;
+    z-index: 9999;
+}
+.slick-overly{
+    position: absolute;
+    z-index: 9999999999;
+    bottom: 0;
+    background: rgba(0,139,138,0.55);
+    color: white;
+    padding: 5px 10px;
+}
+.sidebar-button-area button{
+    border: none;
+    background: #3a495f;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 49%;
+}
+.news-feed-nav button{
+    width: 49%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.news-feed-nav .active{
+    background: #3a495f;
+    color: white;
+}
+.latest-news a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.latest-news a:hover{
+    color: blue;
+}
+.all-news-button button{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #3a495f;
+    color: white;
+    padding: 5px 25px;
+    margin-top: 5px;
+}
+.epaper-button button{
+    width: 100%;
+    border: none;
+    background: #ffffff;
+    padding: 10px 25px;
+    margin-top: 5px;
+}
+.servey-input-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    top: -20px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #198754;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #F87DA9;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+   /* transform: translate(-50%,-50%) !important;*/
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+#test-label-2:before{
+    border: 3px solid #b00021;
+}
+#test-label-3:before{
+    border: 3px solid #007aff;
+}
+.result{
+    text-align: right;
+}
+.result a{
+    text-decoration: none;
+    color: black;
+}
+.survey-area .card-header,
+.advertise-area .card-header{
+    background-image: url("../Image/result.webp");
+    color: white;
+    text-align: center;
+}
+.survey-area .card,
+.advertise-area .card{
+    border: 1px solid #d17c29;
+}
+.advertise-area .card-body{
+    background: #f0f0ed;
+}
+.advertise-item{
+    display: flex;
+    border: 1px;
+    border-color: red;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.advertise-item:nth-child(2){
+    border-color: #ef433a;
+}
+.advertise-item:nth-child(3){
+    border-color: #38ba7d;
+}
+.advertise-item .text{
+     flex: 4;
+     text-align: center;
+}
+.advertise-item .icon{
+   flex: 1;
+   background: #007aff;
+   padding: 5px;
+   color: white;
+   text-align: center;
+   position: relative;
+}
+.advertise-item:nth-child(2) .icon{
+    background: #ef433a;
+}
+.advertise-item:nth-child(3) .icon{
+    background: #38ba7d;
+}
+.right-arrow{
+    position: absolute;
+    right: -6px;
+    color: #007aff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.advertise-item:nth-child(2)  .right-arrow{
+    color: #ef433a;
+}
+.advertise-item:nth-child(3)  .right-arrow{
+    color: #38ba7d;
+}
+.prayer-time-area{
+    background: #f3f1ef;
+}
+.pray-time-header{
+    border-right: 5px solid #f49c0c;
+    border-left: 5px solid #f49c0c;
+}
+.pray-time-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pray-time-header .logo{
+    flex: 1;
+}
+.pray-time-header .content i{
+    flex: 2;
+    font-size: 45px;
+}
+.pray-time-header .content h4{
+    flex: 1;
+}
+.pray-time-header .content{
+    flex: 2;
+    display: flex;
+    text-align: center;
+}
+.prayer-name{
+    background: #6b8e23;
+    color: white;
+    text-align: center;
+}
+.prayer-time{
+    background: olive;
+    color: white;
+    text-align: center;
+}
+.prayer-table{
+    width: 100%;
+}
+.prayer-table td{
+    border: 3px solid white;
+    padding: 3px;
+}
+.rise-set{
+    background: olive;
+}
+.district-news .card-header{
+    border-bottom: 1px solid brown;
+}
+.district-news .card-body{
+    background: #e6e6fa;
+}
+.footer-logo-container{
+    background: #363d4d;
+    padding: 15px 0;
+}
+.footer-logo-container img{
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.footer-container{
+    background: black;
+    color: white;
+    padding: 25px 0;
+}
+.footer-container a{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    display: block;
+}
+.footer-container a:hover{
+    color: blue;
+}
+.footer-container img{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px;
+}
+.footer-credit-container{
+    background: #363d4d;
+     padding: 10px 0;
+}
+.footer-credit-container p,
+.footer-credit-container a{
+    color: white;
+    text-decoration: none;
+}
+.footer-credit-container a:hover{
+    color: lightblue;
+}
+
+
+.category-submenu{
+    margin-top: 2px;
+}
+.category-submenu a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+.category-submenu a:hover{
+    color: red;
+}
+.category-submenu-container{
+    border-bottom: 1px solid silver;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+.feature-news{
+    position: relative;
+}
+.feature-news .content{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    padding: 10px 69px;
+    color: white;
+}
+.feature-news .content h2:hover{
+    color:goldenrod;
+}
+.feature-news .content h5:hover{
+    color: goldenrod;
+}
+.breadcrumb a{
+    text-decoration: none;
+}
+.social-share a{
+    color: black;
+    font-size: 30px;
+}
+.news-page-content p{
+    margin: 20px 0;
+    text-align: justify;
+}
